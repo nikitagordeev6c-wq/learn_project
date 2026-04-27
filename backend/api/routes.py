@@ -2,6 +2,7 @@ from backend.services.status_service import get_status_data, get_items_data
 from backend.schemas.status_schema import StatusOutSchema
 from backend.schemas.item_schema import ItemsOutSchema
 
+
 def register_routes(app):
     @app.get("/api/status")
     @app.output(StatusOutSchema)
