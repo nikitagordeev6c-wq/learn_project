@@ -7,7 +7,19 @@ def get_status_data():
     }
 def get_items_data():
     return [
-        {"id":1, "name":"Товар 1"},
-        {"id":2, "name":"Товар 2"},
-        {"id":3, "name":"Товар 3"}
+        {
+            "id": 1,
+            "name": "Компьютер",
+            "image": "img/pc.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Ноутбук",
+            "image": "img/nt.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Приставка",
+            "image": "img/ps.jpg"
+        }
     ]

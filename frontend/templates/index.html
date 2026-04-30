@@ -21,11 +21,14 @@
 
         <section class="card">
             <h2>Список элементов</h2>
-            <ul>
+            <div class="spisok">
                 {% for item in items %}
-                    <p1>{{ item.id }} - {{ item.name }}</p1>
+                    <div class="product-item">
+                        <img src="{{ url_for('static', filename=item.image) }}" alt="" class="product-img">
+                        <h3 class="item-name">{{ item.name }}</h3>
+                    </div>
                 {% endfor %}
-            </ul>
+            </div>
         </section>
 
         <section class="card">

@@ -13,3 +13,4 @@ def register_routes(app):
     @app.output(ItemsOutSchema)
     def api_items():
         return {"items": get_items_data()}
+
